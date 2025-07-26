@@ -131,23 +131,5 @@ return {
     },
     event = "VeryLazy",
   },
-  {
-    "vhyrro/luarocks.nvim",
-    priority = 1001,
-    opts = {
-      rocks = { "magick" },
-    },
-  },
-  {
-    "3rd/image.nvim",
-    dependencies = { "luarocks.nvim" },
-    opts = {},
-  },
-  {
-    "ellisonleao/carbon-now.nvim",
-    lazy = true,
-    cmd = "CarbonNow",
-    ---@param opts cn.ConfigSchema
-    opts = { [[ your custom config here ]] },
-  },
+  { "mistricky/codesnap.nvim", build = "make" },
 }

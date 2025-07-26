@@ -48,6 +48,8 @@ return {
           end,
           desc = "Close buffer from tabline",
         },
+        ["<Tab>"] = { function() require("astrocore.buffer").nav(1) end, desc = "Next buffer (Tab)" },
+        ["<S-Tab>"] = { function() require("astrocore.buffer").nav(-1) end, desc = "Previous buffer (Shift+Tab)" },
       },
     },
   },
