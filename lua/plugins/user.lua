@@ -98,10 +98,6 @@ return {
   },
   { "wakatime/vim-wakatime", lazy = false },
   {
-    "supermaven-inc/supermaven-nvim",
-    config = function() require "plugins.configs.supermaven" end,
-  },
-  {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       window = {
@@ -118,5 +114,13 @@ return {
   },
   {
     "markwoodhall/vim-codelens",
+  },
+  {
+    "rebelot/heirline.nvim",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+      "Exafunction/codeium.vim",
+    },
+    event = "VeryLazy",
   },
 }
