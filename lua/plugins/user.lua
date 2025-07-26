@@ -116,11 +116,31 @@ return {
     "markwoodhall/vim-codelens",
   },
   {
+    "Exafunction/windsurf.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "hrsh7th/nvim-cmp",
+    },
+    config = function() require "plugins.configs.codeium" end,
+  },
+  {
     "rebelot/heirline.nvim",
     dependencies = {
       "nvim-tree/nvim-web-devicons",
       "Exafunction/codeium.vim",
     },
     event = "VeryLazy",
+  },
+  {
+    "vhyrro/luarocks.nvim",
+    priority = 1001,
+    opts = {
+      rocks = { "magick" },
+    },
+  },
+  {
+    "3rd/image.nvim",
+    dependencies = { "luarocks.nvim" },
+    opts = {},
   },
 }
