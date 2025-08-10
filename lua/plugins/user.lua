@@ -117,6 +117,5 @@ return {
   {
     "markwoodhall/vim-codelens",
   },
-  { "mistricky/codesnap.nvim", build = "make" },
   { "typicode/bg.nvim", lazy = false },
 }
